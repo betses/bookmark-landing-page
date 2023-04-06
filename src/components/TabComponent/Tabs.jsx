@@ -54,7 +54,7 @@ const Tabs = () => {
   return (
     <div className="features">
       <div className="features__main">
-        <div className="features__main__navigation flex flex-col pb-16 px-8">
+        <div className="features__main__navigation flex flex-col pb-11 px-8">
           <button
             onClick={() => switchTabs(0)}
             className="border-y border-grayish-blue py-6"
@@ -92,16 +92,26 @@ const Tabs = () => {
             </span>
           </button>
         </div>
-        <div className="features__main__info md:flex px-8 mt-10">
-          <img
-            className="features__main__info__image"
-            src={image[infoIndex]}
-            alt="info-image"
-          />
-          <div className="features__main__info__details">
-            <h2>{heading[infoIndex]}</h2>
-            <p>{description[infoIndex]}</p>
-            <button>more info</button>
+        <div className="features__main__info md:flex px-10 mt-10">
+          <div className="flex justify-center">
+            <img
+              className="features__main__info__image"
+              src={image[infoIndex]}
+              alt="info-image"
+            />
+          </div>
+          <div className="features__main__info__details py-10">
+            <h2 className="font-medium text-center text-very-dark-blue text-xl">
+              {heading[infoIndex]}
+            </h2>
+            <p className="text-grayish-blue text-center font-normal text-base pt-5 leading-6">
+              {description[infoIndex]}
+            </p>
+            <div className="hidden">
+              <button className="py-3 px-4 rounded-lg text-white bg-soft-blue">
+                More info
+              </button>
+            </div>
           </div>
         </div>
       </div>
