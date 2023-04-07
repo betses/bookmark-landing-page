@@ -14,7 +14,7 @@ const Contact = () => {
         <div className=" flex flex-col space-y-5 ">
           <div className="flex items-center bg-white px-3 rounded-md">
             <input className="py-4 outline-none w-full" />
-            <img src={error} className="h-5 w-5" />
+            <img src={error} className="h-5 w-5 hidden" />
           </div>
           <button className="text-white p-5 bg-soft-red font-medium rounded-md">
             Contact Us
