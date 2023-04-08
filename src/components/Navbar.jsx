@@ -1,10 +1,9 @@
-import React from 'react';
-import bookmark from '../assets/images/logo-bookmark.svg';
+import Logo from './Logo';
 
 const Navbar = () => {
   return (
     <div className="p-10 flex justify-between items-center">
-      <img src={bookmark} alt="bookmark" />
+      <Logo color="#252b46" />
       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15">
         <path
           fill="#242A45"

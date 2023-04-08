@@ -5,10 +5,10 @@ import Logo from './Logo';
 
 const Footer = () => {
   return (
-    <div className="py-16 bg-very-dark-blue">
+    <div className="py-10 bg-very-dark-blue">
       <div className="flex flex-col items-center">
-        <Logo />
-        <ul className="text-white">
+        <Logo color="#ffffff" />
+        <ul className="text-white space-y-5 py-7">
           <li>FEATURES</li>
           <li>PRICING</li>
           <li>CONTACT</li>
