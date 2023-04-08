@@ -7,14 +7,14 @@ const Header = () => {
       <div className=" pb-5 mt-10 order-last">
         <div className="relative">
           <img className="relative " src={tab1} alt="tab" />
-          <div className="absolute -z-50 top-16 right-0 rounded-l-full h-56 w-[18.5rem] bg-soft-blue sm:top-36 sm:h-80 sm:w-[32.5rem] md:top-24 md:h-72 md:w-[23.5rem] " />
+          <div className="absolute -z-50 top-16 right-0 rounded-l-full h-56 w-[18.5rem] bg-soft-blue sm:top-36 sm:h-80 sm:w-[32.5rem] md:top-24 md:h-[67%] md:w-[20.5rem] lg:h-[70%] lg:top-32 xl:w-[70%] xl:h-[80%]" />
         </div>
       </div>
-      <div className=" px-8 py-12 space-y-7">
-        <h1 className="font-medium text-3xl text-center text-very-dark-blue md:text-left md:text-4xl">
+      <div className=" px-8 py-12 space-y-7 lg:pl-28  2xl:px-40">
+        <h1 className="font-medium text-3xl text-center text-very-dark-blue md:text-left md:text-4xl lg:text-5xl ">
           A Simple Book Mark Manager
         </h1>
-        <p className="text-grayish-blue text-center text-sm px-3 md:text-left md:text-base">
+        <p className="text-grayish-blue text-center text-sm px-3 md:text-left md:text-base lg:text-lg xl:pr-20">
           A clean and simple interface to organize your favourite websites. Open
           a new browser tab and see your sites load instantly. Try it for free.
         </p>
