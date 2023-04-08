@@ -8,12 +8,12 @@ const Footer = () => {
     <div className="py-10 bg-very-dark-blue">
       <div className="flex flex-col items-center">
         <Logo color="#ffffff" />
-        <ul className="text-white space-y-5 py-7">
+        <ul className="text-white space-y-5 py-7 text-center">
           <li>FEATURES</li>
           <li>PRICING</li>
           <li>CONTACT</li>
         </ul>
-        <div>
+        <div className="flex space-x-8">
           <img src={facebook} />
           <img src={twitter} />
         </div>
