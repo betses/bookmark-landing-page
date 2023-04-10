@@ -4,7 +4,7 @@ import Tabs from './TabComponent/Tabs';
 const Features = () => {
   return (
     <div>
-      <div className=" px-10 py-12 space-y-7">
+      <div className=" px-10 py-12 space-y-7 lg:px-[33%]">
         <h1 className="font-medium text-2xl text-center text-very-dark-blue">
           Features
         </h1>

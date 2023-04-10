@@ -54,13 +54,13 @@ const Tabs = () => {
   return (
     <div className="features">
       <div className="features__main">
-        <div className="features__main__navigation flex flex-col pb-11 px-8">
+        <div className="features__main__navigation flex flex-col pb-11 px-8 md:flex-row md:justify-center">
           <button
             onClick={() => switchTabs(0)}
-            className="border-y border-grayish-blue py-6"
+            className="border-y border-gray-200 py-6    md:border-t-0"
           >
             <span
-              className={`text-lg text-very-dark-blue h-full py-6 ${
+              className={`text-lg text-very-dark-blue h-full py-6 md:px-7 ${
                 infoIndex === 0 ? 'border-b-4 border-soft-red' : ''
               }`}
             >
@@ -69,10 +69,10 @@ const Tabs = () => {
           </button>
           <button
             onClick={() => switchTabs(1)}
-            className="border-b border-grayish-blue py-6"
+            className="border-b border-gray-200 py-6"
           >
             <span
-              className={`text-lg text-very-dark-blue h-full py-6 ${
+              className={`text-lg text-very-dark-blue h-full py-6 md:px-7 ${
                 infoIndex === 1 ? 'border-b-4 border-soft-red' : ''
               }`}
             >
@@ -81,10 +81,10 @@ const Tabs = () => {
           </button>
           <button
             onClick={() => switchTabs(2)}
-            className="border-b border-grayish-blue py-6"
+            className="border-b border-gray-200 py-6"
           >
             <span
-              className={`text-lg text-very-dark-blue h-full py-6 ${
+              className={`text-lg text-very-dark-blue h-full py-6 md:px-7 ${
                 infoIndex === 2 ? 'border-b-4 border-soft-red' : ''
               }`}
             >
@@ -93,22 +93,22 @@ const Tabs = () => {
           </button>
         </div>
         <div className="features__main__info md:flex px-10 mt-10">
-          <div className="flex justify-center">
+          <div className="flex justify-center md:shrink-0">
             <img
               className="features__main__info__image"
               src={image[infoIndex]}
               alt="info-image"
             />
           </div>
-          <div className="features__main__info__details py-10">
-            <h2 className="font-medium text-center text-very-dark-blue text-xl">
+          <div className="features__main__info__details py-10 md:px-[10%]">
+            <h2 className="font-medium text-center text-very-dark-blue text-xl md:text-start">
               {heading[infoIndex]}
             </h2>
-            <p className="text-grayish-blue text-center font-normal text-base pt-5 leading-6">
+            <p className="text-grayish-blue text-center font-normal text-base pt-5 leading-6 md:text-start">
               {description[infoIndex]}
             </p>
-            <div className="hidden">
-              <button className="py-3 px-4 rounded-lg text-white bg-soft-blue">
+            <div className="hidden md:flex mt-10">
+              <button className="py-3 px-5 rounded-lg text-sm font-medium text-white bg-soft-blue">
                 More info
               </button>
             </div>
