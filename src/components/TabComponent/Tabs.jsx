@@ -54,10 +54,10 @@ const Tabs = () => {
   return (
     <div className="features">
       <div className="features__main">
-        <div className="features__main__navigation flex flex-col pb-11 px-8 md:flex-row md:justify-center">
+        <div className="flex flex-col px-8 features__main__navigation pb-11 md:flex-row md:justify-center">
           <button
             onClick={() => switchTabs(0)}
-            className="border-y border-gray-200 py-6    md:border-t-0"
+            className="py-6 border-gray-200 border-y md:border-t-0"
           >
             <span
               className={`text-lg text-very-dark-blue h-full py-6 md:px-7 ${
@@ -69,7 +69,7 @@ const Tabs = () => {
           </button>
           <button
             onClick={() => switchTabs(1)}
-            className="border-b border-gray-200 py-6"
+            className="py-6 border-b border-gray-200"
           >
             <span
               className={`text-lg text-very-dark-blue h-full py-6 md:px-7 ${
@@ -81,7 +81,7 @@ const Tabs = () => {
           </button>
           <button
             onClick={() => switchTabs(2)}
-            className="border-b border-gray-200 py-6"
+            className="py-6 border-b border-gray-200"
           >
             <span
               className={`text-lg text-very-dark-blue h-full py-6 md:px-7 ${
@@ -92,7 +92,7 @@ const Tabs = () => {
             </span>
           </button>
         </div>
-        <div className="features__main__info md:flex px-10 mt-10">
+        <div className="px-10 mt-10 features__main__info md:flex lg:ml-28">
           <div className="flex justify-center md:shrink-0">
             <img
               className="features__main__info__image"
@@ -100,15 +100,15 @@ const Tabs = () => {
               alt="info-image"
             />
           </div>
-          <div className="features__main__info__details py-10 md:px-[10%]">
-            <h2 className="font-medium text-center text-very-dark-blue text-xl md:text-start">
+          <div className="features__main__info__details py-10 md:pr-[18%] lg:pl-[8%]">
+            <h2 className="text-xl font-medium text-center text-very-dark-blue md:text-start">
               {heading[infoIndex]}
             </h2>
-            <p className="text-grayish-blue text-center font-normal text-base pt-5 leading-6 md:text-start">
+            <p className="pt-5 text-base font-normal leading-6 text-center text-grayish-blue md:text-start">
               {description[infoIndex]}
             </p>
-            <div className="hidden md:flex mt-10">
-              <button className="py-3 px-5 rounded-lg text-sm font-medium text-white bg-soft-blue">
+            <div className="hidden mt-10 md:flex">
+              <button className="px-5 py-3 text-sm font-medium text-white rounded-lg bg-soft-blue">
                 More info
               </button>
             </div>
