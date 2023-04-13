@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="py-10 bg-very-dark-blue">
       <div className="flex flex-col items-center">
         <Logo color="#ffffff" />
-        <ul className="text-white space-y-5 py-7 text-center">
+        <ul className="space-y-5 text-center text-white py-7">
           <li>FEATURES</li>
           <li>PRICING</li>
           <li>CONTACT</li>
