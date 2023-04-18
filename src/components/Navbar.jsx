@@ -4,10 +4,15 @@ const Navbar = () => {
   return (
     <div className="p-10 flex justify-around items-center">
       <Logo color="#252b46" />
-      <ul className=" text-black sm:hidden lg:flex lg:space-x-10 lg:text-lg lg:items-center">
+      <ul className=" text-black sm:hidden lg:flex lg:space-x-10 lg:text-base lg:items-center">
         <li>FEATURES</li>
         <li>PRICING</li>
         <li>CONTACT</li>
+        <li>
+          <button className="text-white py-2 px-7 rounded-md bg-soft-red">
+            LOGIN
+          </button>
+        </li>
       </ul>
       <svg
         xmlns="http://www.w3.org/2000/svg"
